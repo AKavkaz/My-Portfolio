@@ -12,9 +12,9 @@ function Main() {
             I'm a Student currently studying frontend software, looking to gain
             experience in the industry.
             <br />
-            Here's a bit more about me.
+            Here's a bit more <a className="about__link" href="#about">about me</a>.
           </p>
-          <div className="social__list">
+          {/* <div className="social__list">
             <a
               href="https://github.com/AKavkaz"
               target="_blank"
@@ -25,7 +25,7 @@ function Main() {
             <a href="mailto:andrewkhomoutov@hotmail.com">
               <FontAwesomeIcon icon="fa-solid fa-envelope" />
             </a>
-          </div>
+          </div> */}
         </div>
       </header>
     </div>

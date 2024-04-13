@@ -6,9 +6,7 @@ function Nav() {
 
   function openNav() {
     const nav = document.querySelector(".nav__container");
-    const navMobile = document.querySelector(".nav__mobile--links");
-    const arrow = document.querySelector(".nav__arrow");
-
+    
     if (!navOpen) {
       setNavOpen(true);
       nav.style.height = "95vh";
