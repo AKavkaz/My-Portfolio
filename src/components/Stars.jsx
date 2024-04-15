@@ -3,11 +3,11 @@ import "../stars.css"
 
 function Stars() {
   return (
-    <>
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-    </>
+    <div id='stars'>
+    <div className="stars"></div>
+    <div className="stars2"></div>
+    <div className="stars3"></div>
+    </div>
   )
 }
 
