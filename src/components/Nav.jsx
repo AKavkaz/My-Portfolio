@@ -45,7 +45,7 @@ function Nav() {
             <li>
               <a
                 className="nav__link"
-                href="mailto:andrewkhomoutov@hotmail.com"
+                href="#contact"
               >
                 Contact
               </a>
@@ -88,7 +88,7 @@ function Nav() {
               <li>
                 <a
                   className="nav__mobile--link"
-                  href="mailto:andrewkhomoutov@hotmail.com"
+                  href="#contact"
                 >
                   Contact
                 </a>
