@@ -4,10 +4,10 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCircleHalfStroke, faBars, faAngleDown,faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import {faGithub} from '@fortawesome/free-brands-svg-icons'
+import { faCircleHalfStroke, faBars, faAngleDown, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {faSquareGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
-library.add(faCircleHalfStroke, faBars, faGithub, faAngleDown, faEnvelope)
+library.add(faCircleHalfStroke, faBars, faSquareGithub, faAngleDown, faSquareEnvelope, faLinkedin)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

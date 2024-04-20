@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Main() {
   useEffect(() => {
@@ -16,8 +17,8 @@ function Main() {
               <h1 className="title">Hey</h1>
               <h1 className="title">I'm Andrew.</h1>
               <p className="header__para">
-                I'm a Student currently studying frontend software, looking to
-                gain experience in the industry.
+                I'm a Frontend Developer currently building web applications and
+                learning Frontend software.
                 <br />
                 Here's a bit more{" "}
                 <a className="about__link nav__link" href="#about">
@@ -37,8 +38,39 @@ function Main() {
               className="about__container"
             >
               <h1 className="title2">About Me</h1>
-              <div className="about_text">
-                <p className="about__para"></p>
+              <p className="about__text">
+                I'm an 18 year old Frontend developer in Australia, I have a
+                passion for frontend technology and creating efficient,
+                user-friendly and responsive websites.
+                <br />
+                Currently, I build web applications for freelance clients, feel
+                free to contact me about any freelance work{" "}
+                <a className="nav__link" href="#contact">
+                  here.
+                </a>
+              </p>
+              <div className="social__links">
+                <a
+                  className="social__link"
+                  target="_blank"
+                  href="https://github.com/AKavkaz"
+                >
+                  <FontAwesomeIcon icon="fa-brands fa-square-github" />
+                </a>
+                <a
+                  className="social__link"
+                  target="_blank"
+                  href=""
+                >
+                  <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                </a>
+                <a
+                  className="social__link"
+                  target="_blank"
+                  href="mailto:andrewkhomoutov@hotmail.com"
+                >
+                  <FontAwesomeIcon icon="fa-solid fa-square-envelope" />
+                </a>
               </div>
             </div>
           </div>
@@ -49,7 +81,7 @@ function Main() {
           <div className="skills">
             <div
               data-aos="fade-right"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               className="skills__container"
             >
               <h1 className="title2">My Skills</h1>
@@ -61,7 +93,7 @@ function Main() {
                 >
                   <img
                     className="skill__img"
-                    src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/1ac69ce5fbc389725f16f989fa53c62d6e1b4883/social%20icons/html5.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg"
                     alt=""
                   />
                   <p className="skill__title orange">HTML</p>
@@ -74,7 +106,7 @@ function Main() {
                 >
                   <img
                     className="skill__img"
-                    src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/1ac69ce5fbc389725f16f989fa53c62d6e1b4883/social%20icons/css3.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg"
                     alt=""
                   />
                   <p className="skill__title blue">CSS</p>
@@ -87,7 +119,7 @@ function Main() {
                 >
                   <img
                     className="skill__img"
-                    src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/programming%20languages/javascript.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
                     alt=""
                   />
                   <p className="skill__title yellow">JavaScript</p>
@@ -100,7 +132,7 @@ function Main() {
                 >
                   <img
                     className="skill__img"
-                    src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/programming%20languages/typescript.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
                     alt=""
                   />
                   <p className="skill__title blue">TypeScript</p>
@@ -113,7 +145,7 @@ function Main() {
                 >
                   <img
                     className="skill__img"
-                    src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/frameworks/react.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
                     alt=""
                   />
                   <p className="skill__title lightblue">React</p>
@@ -126,10 +158,10 @@ function Main() {
                 >
                   <img
                     className="skill__img"
-                    src="https://raw.githubusercontent.com/bablubambal/All_logo_and_pictures/7c0ac2ceb9f9d24992ec393d11fa7337d2f92466/cloud/firebase.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg"
                     alt=""
                   />
-                  <p className="skill__title yellow">Firebase</p>
+                  <p className="skill__title orange">Firebase</p>
                 </div>
                 <div
                   data-aos="flip-right"
@@ -139,12 +171,26 @@ function Main() {
                 >
                   <img
                     className="skill__img"
-                    src="https://www.svgrepo.com/show/354113/nextjs-icon.svg"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg"
                     alt=""
                   />
                   <p className="skill__title black">Next.js</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div className="row">
+          <div className="projects">
+            <div className="projects__container">
+              <h2 className="title2">
+                  My Projects
+              </h2>
+            <div className="projects__carousel">
+
+            </div>
             </div>
           </div>
         </div>
