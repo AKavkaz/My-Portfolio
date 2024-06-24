@@ -50,11 +50,6 @@ function Nav() {
                 Contact
               </a>
             </li>
-            <li>
-              <button className="contrast">
-                <FontAwesomeIcon icon="fa-solid fa-circle-half-stroke" />
-              </button>
-            </li>
           </ul>
           <button className="btn__menu" onClick={() => openNav()}>
             {navOpen ? (
