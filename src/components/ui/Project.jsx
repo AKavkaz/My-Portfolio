@@ -6,6 +6,7 @@ function Project({ title, github, url }) {
     <div
       data-aos="flip-right"
       data-aos-duration="1000"
+      data-aos-once="true"
       className="project__card"
     >
       <div className="project__info">

@@ -3,10 +3,7 @@ import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [buttonText, setButtonText] = useState("Send");
-
-  const handleClick = () => {
-    setButtonText("Sent!");
-  };
+  const [buttonDisabled, setButtonDisabled] = useState(false);
 
   const form = useRef();
 
@@ -20,6 +17,8 @@ function Contact() {
       .then(
         () => {
           console.log("SUCCESS!");
+          setButtonText("Sent!");
+          setButtonDisabled(true);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -30,13 +29,14 @@ function Contact() {
   return (
     <form className="contact__form" ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="user_name" required />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="user_email" required />
       <label>Message</label>
-      <textarea name="message" />
+      <textarea name="message" required />
       <input
-        onClick={handleClick}
+        disabled={buttonDisabled}
+        style={{ cursor: buttonDisabled ? "not-allowed" : "pointer" }}
         className="contact__btn"
         type="submit"
         value={buttonText}

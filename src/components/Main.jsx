@@ -15,13 +15,19 @@ function Main() {
     <>
       <section id="landing">
         <div className="row">
-          <header className="header">
+          <header
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="275"
+            data-aos-once="true"
+            className="header"
+          >
             <div className="header__container">
               <h1 className="title">Hey</h1>
               <h1 className="title">I'm Andrew.</h1>
               <p className="header__para">
-                I'm a Frontend Developer currently building web applications and
-                learning Frontend software.
+                I'm a Frontend Developer currently building web applications
+                with great user experiences
                 <br />
                 Here's a bit more{" "}
                 <a className="about__link nav__link" href="#about">
@@ -38,16 +44,16 @@ function Main() {
             <div
               data-aos="fade-left"
               data-aos-duration="1000"
+              data-aos-once="true"
               className="about__container"
             >
               <h1 className="title2">About Me</h1>
               <p className="about__text">
-                I'm an 18 year old Frontend developer in Australia, I have a
+                I'm a Frontend developer based in Perth, Australia, I have a
                 passion for frontend technology and creating efficient,
                 user-friendly and responsive websites.
                 <br />
-                Currently, I build web applications for freelance clients, feel
-                free to contact me about any freelance work.
+                Currently, I build web applications for clients and open to work, feel free to contact me.
               </p>
               <div className="social__links">
                 <a
@@ -64,10 +70,7 @@ function Main() {
                 >
                   <FontAwesomeIcon icon="fa-brands fa-linkedin" />
                 </a>
-                <a
-                  className="social__link"
-                  href="#contact"
-                >
+                <a className="social__link" href="#contact">
                   <FontAwesomeIcon icon="fa-solid fa-square-envelope" />
                 </a>
               </div>
@@ -81,6 +84,7 @@ function Main() {
             <div
               data-aos="fade-right"
               data-aos-duration="500"
+              data-aos-once="true"
               className="skills__container"
             >
               <h1 className="title2">My Skills</h1>
@@ -133,14 +137,12 @@ function Main() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="projects">
-        <div className="row">
           <div
+            id="projects"
             className="projects"
             data-aos="fade-left"
             data-aos-duration="500"
+            data-aos-once="true"
           >
             <div className="projects__container">
               <h2 className="title2">My Projects</h2>
@@ -166,9 +168,14 @@ function Main() {
         </div>
       </section>
       <section id="contact">
-        <div data-aos="fade-right" data-aos-duration="500" className="contact">
-            <h1>Send me an Email 👇</h1>
-            <Contact />
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-once="true"
+          className="contact"
+        >
+          <h1>Send me an Email 👇</h1>
+          <Contact />
         </div>
       </section>
     </>

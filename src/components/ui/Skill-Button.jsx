@@ -3,6 +3,7 @@ function SkillButton({ src, title, color }) {
     <div
       data-aos="flip-right"
       data-aos-duration="1000"
+      data-aos-once="true"
       className="skill__button"
     >
       <img className="skill__img" src={src} alt="" />
