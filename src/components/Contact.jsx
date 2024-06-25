@@ -10,6 +10,8 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    setButtonText("Loading...")
+
     emailjs
       .sendForm("service_t6qe73j", "template_5in8myv", form.current, {
         publicKey: "L_PoicZTpzyCUQzVw",
